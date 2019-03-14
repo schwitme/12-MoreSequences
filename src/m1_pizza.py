@@ -30,10 +30,10 @@ def main():
     #        RE-commenting out the previous test to reduce the output.
     # -------------------------------------------------------------------------
 
-    # run_test_generate_points_on_circle()
-    # run_test_draw_points_on_circle()
-    # run_test_pizza()
-    # run_test_polygon()
+    run_test_generate_points_on_circle()
+    run_test_draw_points_on_circle()
+    run_test_pizza()
+    run_test_polygon()
     run_test_fancy_polygon()
 
 
@@ -404,7 +404,7 @@ def run_test_polygon():
     circle = rg.Circle(rg.Point(200, 200), 150)
     circle.fill_color = 'lime green'
     polygon(window, circle, 4, 'black', 5)
-    window.continue_on_mouse_click()
+    window.close_on_mouse_click()
 
 
 def polygon(window, circle, number_of_segments, color, thickness):
